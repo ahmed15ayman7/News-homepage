@@ -1,0 +1,111 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+:root{
+
+    --Soft-orange: hsl(35, 77%, 62%);
+    --Soft-red: hsl(5, 85%, 63%);
+    --Off-white: hsl(36, 100%, 99%);
+    --Grayish-blue: hsl(233, 8%, 79%);
+    --Dark-grayish-blue: hsl(236, 13%, 42%);
+    --Very-dark-blue: hsl(240, 100%, 5%);
+    
+}
+*{
+    border: none !important;
+    outline: none !important;
+
+}
+body{
+    font-family: 'Epilogue', sans-serif;
+}
+p{
+    font-size: 15px;
+    color: var(--Grayish-blue);
+}
+.nav-link{
+    color: var(--Grayish-blue) !important;
+}
+.nav-link:hover{
+    color: var(--Soft-orange) !important;
+}
+.navbar-brand{
+    color: var(--Almost-Black) !important;
+    
+}
+.navbar .navbar-toggler:focus{
+    box-shadow: none;
+    
+}
+
+
+.btn-r{
+    color: var(--Off-white) !important;
+    border-radius: 0 !important;
+    background-color: var(--Soft-red);
+}
+.btn-r:hover{
+
+    background-color: var(--Very-dark-blue) !important;
+}
+.new{
+    
+    background-color: var(--Very-dark-blue);
+}
+
+.new h1{
+    color: var(--Soft-orange);
+}
+.new h5{
+    cursor: pointer;
+ color: var(--Off-white);   
+}
+.new h5:hover{
+    color: var(--Soft-orange);
+}
+.new p{
+    color: var(--Dark-grayish-blue);
+    margin-bottom: 10px ;
+}
+.new hr{
+    color: var(--Dark-grayish-blue);
+}
+.RTT div h4{
+    color: var(--Grayish-blue);
+}
+.RTT div h6{
+    cursor: pointer;
+    color: var(--Very-dark-blue);
+}
+.RTT div h6:hover{
+    color: var(--Soft-red);
+}
+
+.RTT img{
+    width: 25% !important;
+}
+@media (max-width: 1024px){
+
+    .navbar-nav:first-child{
+        position: absolute;
+        background-color: var(--Off-white);
+        height: 100vh;
+        width: 50%;
+        right: 0;
+        top: 0;
+        z-index: 3;
+        padding: 5px;
+    }
+    .navbar-nav li:first-of-type{
+       
+        cursor: pointer;
+        transform: scale(2) !important;
+    }
+    
+
+    
+    .navbar-nav .nav-item{
+        position: relative;
+    }
+
+}
